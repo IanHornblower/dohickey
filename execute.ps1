@@ -1,8 +1,9 @@
-$val = 9999 # Start Value
 $DomainName = "ELKHARTCHRISTIAN.LOCAL"
 
 $UserName = (Get-Content -Path .\config.ini)[0]
 $ending = (Get-Content -Path .\config.ini)[1]
+$val = [single](Get-Content -Path .\config.ini)[2]
+#$val = 9999
 $Password = [string]$val + $ending
 
 
